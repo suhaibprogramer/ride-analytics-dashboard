@@ -1,0 +1,121 @@
+Ride ID,Date,Pickup Location,Drop-off Location,Fare,Payment Method,Ride Status,Rating
+R001,2026-08-21,Gulberg,DHA,713,Cash,Completed,5.0
+R002,2026-08-04,Gulberg,Askari,215,Cash,Completed,3.0
+R003,2026-08-17,Lahore,Cantt,1009,Cash,Completed,4.0
+R004,2026-08-26,Lahore,Model Town,1015,Card,Completed,3.0
+R005,2026-08-25,Bahria Town,Gulberg,339,Card,Completed,4.0
+R006,2026-08-20,Johar Town,DHA,1090,Wallet,Completed,4.0
+R007,2026-08-03,Johar Town,Faisal Town,543,Wallet,Completed,5.0
+R008,2026-08-08,Johar Town,Gulberg,626,Cash,Completed,4.0
+R009,2026-08-21,Bahria Town,Model Town,908,Card,Completed,4.0
+R010,2026-08-23,Gulberg,Model Town,651,Cash,Completed,4.0
+R011,2026-08-30,Model Town,Faisal Town,264,Cash,Cancelled,
+R012,2026-08-26,Bahria Town,Askari,698,Cash,Completed,5.0
+R013,2026-08-29,Bahria Town,Cantt,1172,Card,Cancelled,
+R014,2026-08-21,Iqbal Town,Model Town,692,Cash,Completed,5.0
+R015,2026-08-18,Johar Town,Askari,967,Card,Completed,3.0
+R016,2026-08-17,Iqbal Town,Gulberg,246,Cash,Completed,3.0
+R017,2026-08-26,Wapda Town,Gulberg,938,Card,Completed,4.0
+R018,2026-08-17,Johar Town,DHA,384,Wallet,Cancelled,
+R019,2026-08-25,Johar Town,Faisal Town,378,Card,Completed,4.0
+R020,2026-08-01,Johar Town,Model Town,1189,Cash,Cancelled,
+R021,2026-08-10,Model Town,Model Town,915,Cash,Completed,5.0
+R022,2026-08-30,Lahore,Faisal Town,1150,Cash,Completed,4.0
+R023,2026-08-29,Johar Town,Cantt,268,Cash,Cancelled,
+R024,2026-08-03,Gulberg,Airport,291,Wallet,Completed,3.0
+R025,2026-08-22,Iqbal Town,Model Town,692,Wallet,Cancelled,
+R026,2026-08-14,Model Town,Cantt,788,Card,Cancelled,
+R027,2026-08-21,Bahria Town,Airport,1074,Cash,Completed,3.0
+R028,2026-08-11,Lahore,Cantt,601,Cash,Completed,5.0
+R029,2026-08-02,Model Town,Gulberg,214,Card,Completed,3.0
+R030,2026-08-09,Iqbal Town,Cantt,420,Wallet,Cancelled,
+R031,2026-08-19,Iqbal Town,Cantt,1118,Card,Completed,3.0
+R032,2026-08-22,Wapda Town,Faisal Town,1017,Card,Completed,5.0
+R033,2026-08-02,Gulberg,DHA,974,Wallet,Completed,3.0
+R034,2026-08-08,Model Town,Cantt,1068,Cash,Completed,4.0
+R035,2026-08-15,Model Town,Gulberg,1057,Wallet,Completed,5.0
+R036,2026-08-18,Lahore,Gulberg,634,Cash,Completed,4.0
+R037,2026-08-07,Wapda Town,DHA,487,Card,Completed,4.0
+R038,2026-08-09,Iqbal Town,Township,1016,Wallet,Cancelled,
+R039,2026-08-26,Iqbal Town,Model Town,538,Card,Completed,3.0
+R040,2026-08-19,Lahore,Faisal Town,267,Cash,Completed,5.0
+R041,2026-08-30,DHA,DHA,1190,Cash,Cancelled,
+R042,2026-08-03,Gulberg,Cantt,976,Cash,Cancelled,
+R043,2026-08-19,Model Town,DHA,317,Card,Completed,5.0
+R044,2026-08-17,Bahria Town,Township,568,Wallet,Completed,3.0
+R045,2026-08-09,Wapda Town,Model Town,764,Card,Completed,3.0
+R046,2026-08-01,Iqbal Town,Gulberg,300,Wallet,Completed,4.0
+R047,2026-08-05,Bahria Town,Gulberg,650,Card,Completed,4.0
+R048,2026-08-27,Johar Town,DHA,763,Wallet,Completed,3.0
+R049,2026-08-09,Gulberg,Gulberg,468,Card,Completed,3.0
+R050,2026-08-23,Bahria Town,Cantt,690,Wallet,Completed,3.0
+R051,2026-08-03,Wapda Town,Township,240,Cash,Completed,3.0
+R052,2026-08-21,Johar Town,Model Town,1054,Wallet,Completed,5.0
+R053,2026-08-01,Gulberg,Gulberg,455,Wallet,Completed,4.0
+R054,2026-08-19,DHA,Askari,411,Cash,Completed,3.0
+R055,2026-08-29,Bahria Town,Cantt,661,Wallet,Completed,5.0
+R056,2026-08-29,Wapda Town,Model Town,634,Cash,Cancelled,
+R057,2026-08-26,DHA,Askari,200,Cash,Completed,4.0
+R058,2026-08-26,Wapda Town,Cantt,696,Cash,Completed,3.0
+R059,2026-08-13,Lahore,Airport,605,Cash,Completed,4.0
+R060,2026-08-12,Johar Town,Cantt,606,Cash,Completed,4.0
+R061,2026-08-11,Johar Town,Gulberg,721,Card,Completed,4.0
+R062,2026-08-22,Bahria Town,DHA,386,Card,Completed,4.0
+R063,2026-08-02,Gulberg,Askari,857,Wallet,Completed,4.0
+R064,2026-08-20,Gulberg,Askari,539,Card,Completed,4.0
+R065,2026-08-01,Model Town,Faisal Town,1033,Cash,Cancelled,
+R066,2026-08-30,Bahria Town,Faisal Town,405,Wallet,Cancelled,
+R067,2026-08-17,Johar Town,Askari,818,Card,Completed,5.0
+R068,2026-08-05,Model Town,Askari,926,Wallet,Completed,3.0
+R069,2026-08-20,Johar Town,Askari,150,Card,Completed,4.0
+R070,2026-08-26,Bahria Town,Airport,1054,Card,Completed,5.0
+R071,2026-08-16,DHA,Gulberg,731,Wallet,Completed,5.0
+R072,2026-08-11,Gulberg,Cantt,785,Cash,Completed,3.0
+R073,2026-08-01,Lahore,Cantt,1123,Wallet,Cancelled,
+R074,2026-08-03,Iqbal Town,Askari,548,Wallet,Completed,4.0
+R075,2026-08-13,Model Town,Model Town,161,Cash,Completed,3.0
+R076,2026-08-06,Iqbal Town,DHA,660,Cash,Completed,4.0
+R077,2026-08-22,Bahria Town,Airport,1183,Card,Cancelled,
+R078,2026-08-18,Iqbal Town,Model Town,1122,Card,Completed,3.0
+R079,2026-08-27,Johar Town,Airport,639,Card,Completed,5.0
+R080,2026-08-10,Model Town,Township,837,Card,Cancelled,
+R081,2026-08-03,DHA,Model Town,623,Card,Completed,5.0
+R082,2026-08-07,Gulberg,Askari,984,Card,Completed,4.0
+R083,2026-08-02,Model Town,Askari,947,Wallet,Cancelled,
+R084,2026-08-01,Wapda Town,Airport,162,Card,Completed,4.0
+R085,2026-08-28,Wapda Town,Cantt,1149,Cash,Completed,4.0
+R086,2026-08-01,Wapda Town,Faisal Town,978,Wallet,Completed,4.0
+R087,2026-08-30,DHA,DHA,956,Wallet,Completed,3.0
+R088,2026-08-03,Wapda Town,Model Town,1095,Cash,Completed,4.0
+R089,2026-08-11,Model Town,Airport,819,Card,Completed,4.0
+R090,2026-08-09,Wapda Town,Township,317,Card,Completed,5.0
+R091,2026-08-02,Bahria Town,Cantt,290,Wallet,Completed,3.0
+R092,2026-08-08,Model Town,DHA,462,Cash,Completed,5.0
+R093,2026-08-04,Model Town,Airport,674,Card,Completed,5.0
+R094,2026-08-24,Gulberg,Model Town,787,Cash,Completed,4.0
+R095,2026-08-19,Wapda Town,Askari,556,Cash,Completed,5.0
+R096,2026-08-08,Gulberg,Township,397,Wallet,Completed,4.0
+R097,2026-08-18,Wapda Town,Faisal Town,291,Wallet,Completed,3.0
+R098,2026-08-28,Wapda Town,Airport,366,Card,Cancelled,
+R099,2026-08-21,Iqbal Town,Model Town,1041,Cash,Completed,5.0
+R100,2026-08-09,Iqbal Town,Airport,1042,Wallet,Completed,4.0
+R101,2026-08-28,Model Town,Gulberg,721,Card,Completed,4.0
+R102,2026-08-19,Wapda Town,Faisal Town,208,Card,Cancelled,
+R103,2026-08-06,Iqbal Town,Cantt,876,Card,Completed,5.0
+R104,2026-08-23,Johar Town,DHA,541,Cash,Completed,4.0
+R105,2026-08-16,Model Town,Airport,1155,Card,Completed,3.0
+R106,2026-08-10,Model Town,Askari,648,Card,Completed,4.0
+R107,2026-08-16,Bahria Town,Askari,827,Card,Completed,4.0
+R108,2026-08-10,Johar Town,Cantt,397,Wallet,Completed,3.0
+R109,2026-08-24,DHA,Cantt,593,Wallet,Completed,5.0
+R110,2026-08-19,Johar Town,Gulberg,547,Card,Completed,3.0
+R111,2026-08-10,Lahore,Model Town,711,Cash,Cancelled,
+R112,2026-08-18,Johar Town,Model Town,1155,Cash,Cancelled,
+R113,2026-08-19,Johar Town,Airport,1130,Card,Completed,3.0
+R114,2026-08-09,Iqbal Town,Gulberg,283,Card,Completed,5.0
+R115,2026-08-21,Lahore,Model Town,455,Wallet,Cancelled,
+R116,2026-08-03,Model Town,Gulberg,1002,Wallet,Completed,5.0
+R117,2026-08-08,Wapda Town,Airport,1056,Card,Cancelled,
+R118,2026-08-14,Johar Town,DHA,353,Cash,Completed,4.0
+R119,2026-08-22,Gulberg,Model Town,641,Cash,Completed,3.0
+R120,2026-08-01,Wapda Town,Airport,1112,Card,Completed,4.0
