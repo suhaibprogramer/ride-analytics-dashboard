@@ -1,67 +1,43 @@
-# Ride Analytics & Revenue Intelligence Dashboard
+## Week 3: Revenue & Driver Performance Analysis
 
-**Zyroo Internship Program — Data Analytics Track, Week 2, Task 01**
+### Objective
+Understand where revenue comes from and how reliably rides are fulfilled, using the same ride-hailing dataset from Week 2.
 
-## Objective
-Clean a small ride-hailing dataset, calculate basic KPIs, and build a simple analytics dashboard.
+### Data Preparation
+Raw dataset had 126 rows; 6 were removed during cleaning (1 duplicate ride ID, 2 missing/invalid dates, 1 missing pickup location, 1 missing fare, 1 negative fare). 120 clean rows remained (96 Completed, 24 Cancelled). Missing ratings on cancelled rides were kept as expected, since cancelled rides are never rated.
 
-## Dataset
-- **Source:** Synthetic sample ride-hailing dataset created for this task (`data/raw_rides.csv`).
-- **Columns:** Ride ID, Date, Pickup Location, Drop-off Location, Fare, Payment Method, Ride Status, Rating.
-- **Raw rows:** 126 (intentionally includes duplicates, blanks, a negative fare, and a bad date to simulate real-world messiness).
+**Note:** this dataset has no `driver_id` or `ride_type` column, so driver-level KPIs and ride-type revenue could not be computed this week (see Limitations).
 
-## Data Cleaning Steps
-1. Removed duplicate Ride IDs (kept first occurrence) — **1 row removed**.
-2. Removed rows with empty Pickup Location or Date — **2 rows removed**.
-3. Removed rows with an unparseable date format — **1 row removed**.
-4. Converted Fare to numeric and removed rows where Fare was missing/non-numeric — **1 row removed**.
-5. Removed rows with a negative Fare — **1 row removed**.
-6. Standardized Date to `YYYY-MM-DD` format.
-7. **Final cleaned dataset: 120 rows** (`data/cleaned_rides.csv`).
+### Revenue KPIs
+- Total completed rides: 96
+- Total revenue: PKR 65,427
+- Average fare per completed ride: PKR 681.53
 
-## KPIs Calculated
-| KPI | Value |
-|---|---|
-| Total Rides | 120 |
-| Completed Rides | 96 |
-| Cancelled Rides | 24 |
-| Total Revenue | PKR 65,427 |
-| Average Fare | PKR 682 |
-| Average Rating | 3.96 / 5 |
+### Revenue Findings
+- Highest-revenue day: Sunday (PKR 11,910); lowest: Thursday (PKR 5,483)
+- Highest-revenue location: Johar Town (PKR 11,323); lowest: DHA (PKR 3,514)
+- Card is the top revenue channel (PKR 26,425); Wallet has the highest average fare (PKR 698.16) despite fewest rides
 
-## Dashboard
-`powerbi/Ride_Analytics_Dashboard.xlsx` contains:
-- A **KPI Dashboard** sheet with all KPIs computed live with formulas (SUMIFS/COUNTIF/AVERAGEIFS) from the cleaned data.
-- A **Charts** sheet with:
-  - Rides by Date
-  - Revenue by Date
-  - Rides by Payment Method
-  - Rides by Status
-  - Top Pickup Locations
-- An **Insights** sheet with written takeaways.
+### Completion & Rating Findings
+- Overall cancellation rate: 20.0%
+- Highest cancellation rate: Lahore (30.0%); lowest: Gulberg (6.7%)
+- Average customer rating: 3.96 / 5, concentrated at 4 and 5 stars, none below 3
 
-This workbook can be used directly as the Power BI data source: open Power BI Desktop → **Get Data → Excel Workbook** → select `Ride_Analytics_Dashboard.xlsx` → load the **Cleaned Data** sheet → recreate the KPI cards and charts above using Power BI's Card and Chart visuals.
+### Charts
+See `screenshots/week-03/` for: revenue by day of week, revenue by location, revenue by payment method, completed vs. cancelled rides, cancellation rate by location, rating distribution.
 
-## Business Insights
-1. Out of 120 cleaned rides, 96 were completed and 24 were cancelled — a 20% cancellation rate worth investigating.
-2. Card is the most-used payment method (45 rides), narrowly ahead of Cash (42) and Wallet (33).
-3. Johar Town is the busiest pickup location with 21 rides, followed by Model Town (19) and Wapda Town (18).
-4. Total revenue from completed rides is PKR 65,427, with an average fare of about PKR 682 per completed ride.
-5. Average customer rating across completed rides is 3.96 out of 5, suggesting room to improve service quality.
+### Business Insights
+- Johar Town combines high revenue with a moderate cancellation rate, making it the strongest-performing zone.
+- Lahore's high cancellation rate despite mid-tier revenue suggests fulfillment issues are suppressing realized revenue there.
+- Gulberg's low cancellation rate is a useful internal benchmark for what reliable fulfillment looks like.
 
-## Tools Used
-- Python (pandas) for data cleaning
-- Excel (openpyxl) for the KPI dashboard and charts
-- Power BI (recommended) for the final interactive dashboard
+### Recommendations
+1. Investigate high cancellation rates in Lahore and Model Town.
+2. Prioritize driver availability in the top three revenue locations (Johar Town, Model Town, Wapda Town).
+3. Promote Wallet as a payment method given its higher average fare per ride.
+4. Re-collect data with `driver_id` and `ride_type` included to complete the driver performance ranking in a future pass.
 
-## Project Structure
-```
-ride-analytics/
-├── data/
-│   ├── raw_rides.csv
-│   └── cleaned_rides.csv
-├── powerbi/
-│   └── Ride_Analytics_Dashboard.xlsx
-├── screenshots/
-└── README.md
-```
+### Limitations
+- No driver-level analysis possible (no `driver_id` column).
+- No ride-type revenue breakdown possible (no `ride_type`/`vehicle_type` column).
+- All data falls within a single month, so month-over-month trends could not be assessed.
