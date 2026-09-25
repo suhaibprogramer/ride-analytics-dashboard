@@ -1,43 +1,82 @@
-## Week 3: Revenue & Driver Performance Analysis
+# Data Analysis Internship — Task 4: Customer Churn & Retention Analysis
 
-### Objective
-Understand where revenue comes from and how reliably rides are fulfilled, using the same ride-hailing dataset from Week 2.
+**Author:** Muhammad Suhaib
 
-### Data Preparation
-Raw dataset had 126 rows; 6 were removed during cleaning (1 duplicate ride ID, 2 missing/invalid dates, 1 missing pickup location, 1 missing fare, 1 negative fare). 120 clean rows remained (96 Completed, 24 Cancelled). Missing ratings on cancelled rides were kept as expected, since cancelled rides are never rated.
+## Overview
 
-**Note:** this dataset has no `driver_id` or `ride_type` column, so driver-level KPIs and ride-type revenue could not be computed this week (see Limitations).
+This project analyzes customer churn behavior using the **Telco Customer Churn (IBM/BlastChar)** dataset. The goal is to understand why customers leave, identify the strongest predictors of churn, and turn those findings into practical retention recommendations — delivered through a Python analysis notebook, an interactive Power BI dashboard, and a concise summary report.
 
-### Revenue KPIs
-- Total completed rides: 96
-- Total revenue: PKR 65,427
-- Average fare per completed ride: PKR 681.53
+## Objective
 
-### Revenue Findings
-- Highest-revenue day: Sunday (PKR 11,910); lowest: Thursday (PKR 5,483)
-- Highest-revenue location: Johar Town (PKR 11,323); lowest: DHA (PKR 3,514)
-- Card is the top revenue channel (PKR 26,425); Wallet has the highest average fare (PKR 698.16) despite fewest rides
+- Measure the overall customer churn rate
+- Identify which customer attributes (contract type, tenure, monthly charges, services subscribed, payment method, etc.) are most associated with churn
+- Segment customers by churn risk
+- Translate findings into actionable retention strategies
 
-### Completion & Rating Findings
-- Overall cancellation rate: 20.0%
-- Highest cancellation rate: Lahore (30.0%); lowest: Gulberg (6.7%)
-- Average customer rating: 3.96 / 5, concentrated at 4 and 5 stars, none below 3
+## Dataset
 
-### Charts
-See `screenshots/week-03/` for: revenue by day of week, revenue by location, revenue by payment method, completed vs. cancelled rides, cancellation rate by location, rating distribution.
+**Telco Customer Churn (IBM / BlastChar)**
+A dataset of telecom customers including demographics, account information (tenure, contract type, payment method), subscribed services (internet, streaming, tech support, etc.), monthly and total charges, and whether the customer churned.
 
-### Business Insights
-- Johar Town combines high revenue with a moderate cancellation rate, making it the strongest-performing zone.
-- Lahore's high cancellation rate despite mid-tier revenue suggests fulfillment issues are suppressing realized revenue there.
-- Gulberg's low cancellation rate is a useful internal benchmark for what reliable fulfillment looks like.
+## Deliverables
 
-### Recommendations
-1. Investigate high cancellation rates in Lahore and Model Town.
-2. Prioritize driver availability in the top three revenue locations (Johar Town, Model Town, Wapda Town).
-3. Promote Wallet as a payment method given its higher average fare per ride.
-4. Re-collect data with `driver_id` and `ride_type` included to complete the driver performance ranking in a future pass.
+| File | Description |
+|---|---|
+| `Task4_Customer_Churn_Analysis.ipynb` | Full exploratory data analysis, cleaning, and churn-driver analysis in Python |
+| `Task4_Churn_Dashboard.pbix` | Interactive Power BI dashboard with KPIs and churn breakdowns |
+| `Task4_Final_Summary.pdf` | 1–2 page executive summary of findings and recommendations |
 
-### Limitations
-- No driver-level analysis possible (no `driver_id` column).
-- No ride-type revenue breakdown possible (no `ride_type`/`vehicle_type` column).
-- All data falls within a single month, so month-over-month trends could not be assessed.
+## Approach
+
+1. **Data Cleaning** — Handled missing values, corrected data types, checked for duplicates and inconsistent categories.
+2. **Exploratory Analysis** — Examined churn distribution and how it varies across customer segments (contract type, tenure buckets, payment method, services used).
+3. **Driver Identification** — Compared churn rates across segments to isolate the strongest churn drivers.
+4. **Dashboard Development** — Built KPI cards, segment breakdowns, and filters in Power BI so the findings can be explored interactively.
+5. **Reporting** — Summarized the top findings and translated them into retention recommendations.
+
+## Key Findings
+
+*(To be filled in with your actual results — upload the dataset or notebook and these can be generated from real numbers)*
+
+- Overall churn rate: *[TBD]*
+- Top churn drivers: *[TBD — e.g. month-to-month contracts, low tenure, no tech support]*
+- Highest-risk customer segment: *[TBD]*
+
+## Recommendations
+
+*(To be filled in based on the findings above)*
+
+- *[TBD — e.g. incentivize longer-term contracts]*
+- *[TBD — e.g. proactive outreach to low-tenure customers]*
+- *[TBD — e.g. bundle tech support / add-on services to reduce churn]*
+
+## Tech Stack
+
+- Python (pandas, matplotlib/seaborn, scikit-learn)
+- Power BI Desktop
+- Jupyter Notebook
+
+## Repository Structure
+
+```
+task4-churn-analysis/
+│
+├── data/
+│   └── telco_customer_churn.csv
+├── notebooks/
+│   └── Task4_Customer_Churn_Analysis.ipynb
+├── powerbi/
+│   └── Task4_Churn_Dashboard.pbix
+├── reports/
+│   └── Task4_Final_Summary.pdf
+├── screenshots/
+│   └── dashboard/
+└── README.md
+```
+
+## How to Reproduce
+
+1. Clone this repository
+2. Install dependencies: `pip install pandas matplotlib seaborn scikit-learn jupyter`
+3. Run `Task4_Customer_Churn_Analysis.ipynb` to reproduce the analysis
+4. Open `Task4_Churn_Dashboard.pbix` in Power BI Desktop to explore the dashboard
